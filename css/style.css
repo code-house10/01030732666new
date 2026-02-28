@@ -1,0 +1,100 @@
+:root {
+    --logo-height-mobile: 100px;
+    --logo-height-desktop: 70px;
+    --logo-width: auto;
+}
+
+.custom-logo {
+    height: var(--logo-height-mobile);
+    width: var(--logo-width);
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: logoEntrance 1s ease-out forwards;
+}
+
+@keyframes logoEntrance {
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (min-width: 768px) {
+    .custom-logo { height: var(--logo-height-desktop); }
+}
+
+/* تحسينات الـ Reveal لتناسب الموبايل */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* تعطيل الانيميشن إذا كان المستخدم يفضل تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.boxes-bg { background-color: #f2f2f2; }
+
+.why-card-line {
+    height: 4px;
+    width: 80px;
+    background-color: #24920F;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.service-card {
+    background-color: #24920F;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-image-container {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.service-btn {
+    background-color: #ffffff;
+    color: #24920F;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+@keyframes pulse-soft {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.animate-pulse-soft { animation: pulse-soft 3s infinite ease-in-out; }
+
+#mobile-menu { transition: transform 0.3s ease-in-out; }
+#mobile-menu.hidden-menu { transform: translateX(100%); }

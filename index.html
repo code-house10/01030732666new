@@ -1,158 +1,100 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5Z59VN8J');</script>
+    <!-- End Google Tag Manager -->
+    
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>الوفاء لبيع مواد التغليف ونقل العفش</title>
+    <title>المهدى لبيع مواد التغليف ونقل العفش</title>
+    
+    <!-- External Dependencies -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#24920F", 
-                        "primary-dark": "#1b7a0b", 
-                        "background-light": "#f9fafb",
-                        "background-dark": "#1f2937",
-                        "text-light": "#111827",
-                        "text-dark": "#f3f4f6",
-                        "secondary-light": "#ffffff",
-                        "secondary-dark": "#374151",
-                        "review-start": "#ffffff",
-                        "review-end": "#f0fdf4",
-                        "star": "#FFD700",
-                    },
-                    fontFamily: {
-                        display: ["Tajawal", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.5rem",
-                        "card": "1rem", 
-                    },
-                },
-            },
-        };
-    </script>
+    
+    <!-- Important: Load script.js right here so Tailwind config processes correctly before body rendering -->
+    <script src="js/script.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> 
-    <style>
-        /* --- إعدادات مقاس الشعار - Logo Size Settings --- */
-        :root {
-            --logo-height-mobile: 70px;  /* ارتفاع الشعار في الموبايل */
-            --logo-height-desktop: 70px; /* ارتفاع الشعار في الكمبيوتر */
-            --logo-width: auto;          /* عرض الشعار (تلقائي للحفاظ على الأبعاد) */
-        }
-
-        .custom-logo {
-            height: var(--logo-height-mobile);
-            width: var(--logo-width);
-            object-fit: contain;
-        }
-
-        @media (min-width: 768px) {
-            .custom-logo {
-                height: var(--logo-height-desktop);
-            }
-        }
-        /* ----------------------------------------------- */
-
-        body {
-            font-family: 'Tajawal', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .boxes-bg {
-            background-color: #f2f2f2;
-        }
-        .why-card-line {
-            height: 4px;
-            width: 80px;
-            background-color: #24920F;
-            margin-top: 4px;
-            margin-bottom: 12px;
-        }
-        .service-card {
-            background-color: #24920F;
-            border-radius: 12px;
-            padding: 20px;
-            transition: all 0.3s ease;
-        }
-        .service-image-container {
-            background-color: #e0e0e0;
-            border-radius: 8px;
-            height: 200px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            margin-bottom: 15px;
-        }
-        .service-btn {
-            background-color: #ffffff;
-            color: #24920F;
-            font-weight: bold;
-            padding: 8px 16px;
-            border-radius: 8px;
-            width: 100%;
-            margin-top: 15px;
-        }
-        @keyframes pulse-soft {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .animate-pulse-soft {
-            animation: pulse-soft 3s infinite ease-in-out;
-        }
-    </style>
+    
+    <!-- Internal Links -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-200">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z59VN8J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-[100] flex justify-end hidden-menu">
+        <div id="menu-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <nav class="relative w-4/5 max-w-xs h-full bg-white dark:bg-secondary-dark shadow-2xl flex flex-col py-8 px-6 overflow-y-auto">
+            <div class="flex items-center justify-between mb-8">
+                <img src="https://ik.imagekit.io/mkek1asn5/General/logo.webp" alt="Logo" class="h-12">
+                <button id="close-menu" class="text-gray-500 hover:text-primary">
+                    <span class="material-icons text-3xl">close</span>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6 text-right">
+                <a class="nav-link text-lg font-bold text-primary border-r-4 border-primary pr-4" href="#">الرئيسية</a>
+                <a class="nav-link text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-primary transition pr-4" href="#about">من نحن</a>
+                <a class="nav-link text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-primary transition pr-4" href="#services">خدماتنا</a>
+                <a class="nav-link text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-primary transition pr-4" href="#articles">المقالات</a>
+                <a class="nav-link text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-primary transition pr-4" href="#contact">اتصل بنا</a>
+            </div>
+            <div class="mt-auto pt-8">
+                <a href="tel:01142771987" class="flex items-center justify-center gap-2 bg-primary text-white font-bold py-4 rounded-xl shadow-lg">
+                    <span class="material-icons">call</span>
+                    اتصل بنا الآن
+                </a>
+            </div>
+        </nav>
+    </div>
+
     <!-- Header -->
     <header class="bg-white/90 backdrop-blur-md dark:bg-secondary-dark/90 shadow-sm py-3 sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center">
                 <a href="#">
-                    <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/logo2.webp" alt="Logo" class="custom-logo">
+                    <img src="https://ik.imagekit.io/mkek1asn5/General/logo.webp" alt="Logo" class="custom-logo">
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 space-x-reverse">
-                <a class="text-gray-700 dark:text-gray-200 hover:text-primary font-medium border-b-2 border-primary pb-1" href="#">الرئيسية</a>
-                <a class="text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#about">من نحن</a>
-                <a class="text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#services">خدماتنا</a>
-                <a class="text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#gallery">معرض الصور</a>
-                <a class="text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#articles">المقالات</a>
-                <a class="text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#contact">اتصل بنا</a>
+                <a class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary font-medium border-b-2 border-primary pb-1" href="#">الرئيسية</a>
+                <a class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#about">من نحن</a>
+                <a class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#services">خدماتنا</a>
+                <a class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#articles">المقالات</a>
+                <a class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary font-medium" href="#contact">اتصل بنا</a>
             </nav>
             <div class="flex items-center gap-4">
-                <button class="text-gray-500 dark:text-gray-300 hover:text-primary">
-                    <span class="material-icons-outlined">search</span>
-                </button>
-                <button class="md:hidden text-gray-500">
-                    <span class="material-icons-outlined">menu</span>
+                <button id="hamburger-btn" class="md:hidden text-gray-500 hover:text-primary transition">
+                    <span class="material-icons-outlined text-3xl">menu</span>
                 </button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="mt-12 md:mt-0 relative h-[85vh] md:h-[600px] flex flex-col justify-end pb-12 md:justify-center md:pb-0 text-center text-white overflow-hidden bg-gray-900">
+    <section class="mt-12 md:mt-0 relative h-[85vh] md:h-[600px] flex flex-col justify-end pb-12 md:justify-center md:pb-0 text-center text-white overflow-hidden bg-gray-900 reveal active">
         <div class="absolute inset-0 z-0">
-            <img alt="شاحنة نقل الوفاء" class="w-full h-full object-cover" src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.0223.52%20AM.webp?updatedAt=1770820050799" />
+            <img alt="شاحنة نقل المهدى" class="w-full h-full object-cover" src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-111%20at%201.03.35%20AM.webp?updatedAt=1770820050849" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/10"></div>
         </div>
-        
         <div class="relative z-10 container mx-auto px-6 w-full">
-            <h1 class="text-3xl md:text-7xl font-bold mb-4 drop-shadow-lg leading-tight">الوفاء لنقل الأثاث</h1>
+            <h1 class="text-3xl md:text-7xl font-bold mb-4 drop-shadow-lg leading-tight">المهدى لبيع جميع مواد التغليف ونقل الأثاث</h1>
             <h2 class="text-base md:text-3xl font-medium mb-8 drop-shadow-md text-gray-100">نقل أثاث آمن واحترافي في أي وقت ومكان !</h2>
-            
             <div class="flex flex-row justify-center gap-4 w-full px-1">
-                <a href="tel:01030732666" class="flex-1 bg-[#60d669] hover:bg-[#4ec557] text-white font-bold py-3 px-2 rounded-md shadow-lg transition flex items-center justify-center border-2 border-white">
+                <a href="tel:01142771987" class="flex-1 bg-[#60d669] hover:bg-[#4ec557] text-white font-bold py-3 px-2 rounded-md shadow-lg transition flex items-center justify-center border-2 border-white">
                     <span class="text-base md:text-lg">اتصل بنا</span>
                 </a>
-                <a href="https://wa.me/201030732666" class="flex-1 bg-[#60d669] hover:bg-[#4ec557] text-white font-bold py-3 px-2 rounded-md shadow-lg transition flex items-center justify-center border-2 border-white">
+                <a href="https://wa.me/201142771987" class="flex-1 bg-[#60d669] hover:bg-[#4ec557] text-white font-bold py-3 px-2 rounded-md shadow-lg transition flex items-center justify-center border-2 border-white">
                     <span class="text-base md:text-lg">تواصل واتس اب</span>
                 </a>
             </div>
@@ -160,7 +102,7 @@
     </section>
 
     <!-- Stats Bar -->
-    <div class="py-8 bg-white dark:bg-background-dark">
+    <div class="py-8 bg-white dark:bg-background-dark reveal">
         <div class="container mx-auto px-4">
             <div class="bg-[#00b050] rounded-[2rem] p-8 shadow-xl text-center text-white mx-2 md:mx-0">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -186,20 +128,20 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white dark:bg-secondary-dark">
+    <section id="about" class="py-16 bg-white dark:bg-secondary-dark reveal">
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="w-full lg:w-1/2 text-right">
                     <div class="flex items-center gap-2 mb-2 text-gray-500 dark:text-gray-400 text-sm">
                         <span class="material-icons-outlined text-primary text-base">local_shipping</span>
-                        <span>شركة الوفاء .. سلامة منقولاتك مهمتنا</span>
+                        <span>شركة المهدى .. سلامة منقولاتك مهمتنا</span>
                     </div>
                     <h2 class="text-2xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6 leading-tight">
-                        شركة الوفاء لبيع مواد التغليف ونقل العفش.. كل احتياجاتك تحت سقف واحد!
+                        شركة المهدى لبيع مواد التغليف ونقل العفش.. كل احتياجاتك تحت سقف واحد!
                     </h2>
                     <div class="w-full h-1 bg-primary mb-6"></div>
                     <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed font-medium">
-                        <strong>شركة الوفاء</strong> تقدم خدمات متكاملة في بيع أجود خامات التغليف ونقل العفش والفك والتركيب داخل وخارج القاهرة.
+                        <strong>شركة المهدى</strong> تقدم خدمات متكاملة في بيع أجود خامات التغليف ونقل العفش والفك والتركيب داخل وخارج القاهرة.
                     </p>
                     <p class="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                         نتميز بتوفير كافة مواد التغليف من بابلز واسترتش وكراتين قوية، بجانب أسطول سيارات مغلقة وأوناش هيدروليكية حديثة.
@@ -218,17 +160,17 @@
                             <span>فريق فني متخصص لفك وتركيب العفش</span>
                         </li>
                     </ul>
-                    <button class="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded shadow-lg transition-colors flex items-center gap-2">
+                    <a href="#contact" class="inline-flex bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded shadow-lg transition-colors items-center gap-2 nav-link">
                         اطلب خدمتك الآن
                         <span class="material-icons-outlined text-sm transform scale-x-[-1]">thumb_up</span>
-                    </button>
+                    </a>
                 </div>
                 <div class="w-full lg:w-1/2 relative">
                     <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrX8AAD0S1pfirsHIDCPo9ApTRtYVRXI0DbjN3w7WBy4bEyTeo7MSVdCe1Vu9H5OtQAWhC6JPW0VNgOxJ-IOI-f5jBtUkqRTuF2UwPMTTAxvkBlNg9XgFfxsXj784TxZa6nwqXmXnygIMLm98Yw2Pznl7VUdyOuBHDfcA14_v_C02-KdYqYaj1X8qWOr0U_ZIyQmffOu2xYpBayJElg0HdKjT1lv-8_kpqDuVg6DG30P71IxqRNtBaW-nnIHFOn2aX5SJplQj7gIms" alt="مقر شركة الوفاء" class="w-full h-auto object-cover min-h-[400px]">
-                        <div class="absolute top-20 right-0 bg-[#60d669] text-white p-10 shadow-lg text-center min-w-[220px]">
-                            <span class="block text-8xl font-extrabold mb-2 leading-none">10</span>
-                            <span class="block text-xl font-bold leading-tight">سنوات في مجال النقل</span>
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2023026-02-11%20at%201.03.40%20AM.webp?updatedAt=1770820051696" alt="مقر شركة المهدى" class="w-full h-auto object-cover min-h-[400px]">
+                        <div class="absolute top-8 right-0 bg-[#60d669] text-white p-6 shadow-lg text-center min-w-[160px]">
+                            <span id="experience-counter" class="block text-6xl font-extrabold mb-1 leading-none">0</span>
+                            <span class="block text-lg font-bold leading-tight">سنوات فى مجال بيع مواد التغليف والكراتين ونقل العفش</span>
                         </div>
                     </div>
                 </div>
@@ -236,361 +178,12 @@
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="py-16 bg-[#f8f9fb] dark:bg-secondary-dark">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-[#2d3748] dark:text-white">
-                    <span class="text-primary">لماذا تختار</span> شركة الوفاء لنقل الأثاث
-                </h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-icons-outlined text-primary text-3xl">verified</span>
-                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white">خبرة وااحترافية</h3>
-                    </div>
-                    <div class="why-card-line"></div>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">نتمتع بخبرة طويلة في جميع أنواع نقل الأثاث، مع فريق عمل مدرب ومؤهل.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-icons-outlined text-orange-500 text-3xl">local_shipping</span>
-                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white">سيارات مغلقة ومؤمنة</h3>
-                    </div>
-                    <div class="why-card-line"></div>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">نستخدم أسطولاً من السيارات المجهزة بالكامل، لحماية الأثاث من الخدوش.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-icons-outlined text-amber-700 text-3xl">inventory</span>
-                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white">تغليف احترافي</h3>
-                    </div>
-                    <div class="why-card-line"></div>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">نوفر مواد تغليف متينة تحافظ على كل قطعة من الأثاث.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-icons-outlined text-blue-600 text-3xl">construction</span>
-                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white">فك وتركيب بدون تلف</h3>
-                    </div>
-                    <div class="why-card-line"></div>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">فنيون متخصصون ونجارون مهرة يتعاملون مع أثاثك بدقة.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-icons-outlined text-yellow-600 text-3xl">payments</span>
-                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white">أسعار اقتصادية</h3>
-                    </div>
-                    <div class="why-card-line"></div>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">خدمة ممتازة بأسعار مناسبة تلائم جميع الميزانيات.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="material-icons-outlined text-red-500 text-3xl">bolt</span>
-                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white">سرعة واستجابة فورية</h3>
-                    </div>
-                    <div class="why-card-line"></div>
-                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">نصل في الموعد المحدد، وننجز المهمة بأقصى سرعة ممكنة.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Mid Banner CTA -->
-    <section class="py-12 bg-primary">
-        <div class="container mx-auto px-4 text-center text-white">
-            <h2 class="text-3xl font-bold mb-4">محتاج تنقل عفشك بسهولة وبدون قلق؟</h2>
-            <p class="text-xl mb-6 font-medium">في <span class="border-b-2 border-white">شركة الوفاء</span> وفرنا لك كل اللي تحتاجه في مكان واحد!</p>
-            <p class="mb-8 opacity-90 max-w-2xl mx-auto">
-                أسطول سيارات مغلقة ومجهزة، أوناش حديثة لكل الأدوار، تغليف احترافي، وفنيين خبرة لضمان سلامة كل قطعة أثاث.
-            </p>
-            <a href="tel:01030732666" class="inline-flex bg-white text-primary font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition items-center gap-2 mx-auto">
-                <span class="material-icons-outlined">call</span>
-                اتصل بنا الآن
-            </a>
-        </div>
-    </section>
 
-    <!-- BOXES DESIGN SECTION -->
-    <section class="py-12 boxes-bg dark:bg-gray-800">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-8">
-            <div class="w-full lg:w-1/3 flex justify-center">
-                <div class="bg-primary w-64 h-64 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden group">
-                    <svg class="w-48 h-48 text-white z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        <rect x="7" y="10" width="10" height="7" rx="1" fill="white" stroke="none"></rect>
-                        <circle cx="6" cy="12" r="1.5" fill="white" stroke="none"></circle>
-                    </svg>
-                    <div class="absolute bottom-4 text-center w-full">
-                        <span class="text-white font-bold text-xl">الوفاء لنقل الاثاث</span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full lg:w-2/3 text-right">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">كراتين الوفاء</h2>
-                <h3 class="text-lg font-medium text-gray-600 dark:text-gray-300 mb-6">شريكك المثالي للتعبئة والتغليف</h3>
-                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 text-sm md:text-base">
-                    إذا كنت تخطط للانتقال إلى منزل جديد، أو تحتاج إلى شحن بضائع، فإن كراتين الوفاء هي الخيار الأمثل لك. نوفر لك كراتين قوية ومتينة مصممة بعناية لحماية مقتنياتك من التلف.
-                </p>
-                <a href="tel:01030732666" class="block w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-md shadow-md transition-all flex items-center justify-center gap-2">
-                    <span class="material-icons-outlined transform rotate-[-90deg]">call</span>
-                    تواصل معانا
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-white dark:bg-background-dark border-t border-b border-gray-100 dark:border-gray-800">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-12">
-                <div class="flex flex-col items-center justify-center gap-2 text-gray-500 dark:text-gray-400 mb-2">
-                    <span class="material-icons-outlined text-4xl">format_quote</span>
-                    <span class="text-sm font-bold">آراء عملائنا</span>
-                </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-[#2d3748] dark:text-white mb-4">ثقة عملائنا في شركة الوفاء هي هدفنا</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-1 text-star text-sm">
-                            <span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span>
-                        </div>
-                        <span class="material-icons-outlined text-primary/20 text-3xl">format_quote</span>
-                    </div>
-                    <p class="text-gray-700 text-sm font-medium mb-3 line-clamp-3 leading-relaxed text-right">"تعامل راقي جداً وسرعة في الإنجاز. العمال كانوا محترفين."</p>
-                    <h4 class="font-bold text-gray-900 text-sm text-right">- أبو محمد، الرياض</h4>
-                </div>
-                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-1 text-star text-sm">
-                            <span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span>
-                        </div>
-                        <span class="material-icons-outlined text-primary/20 text-3xl">format_quote</span>
-                    </div>
-                    <p class="text-gray-700 text-sm font-medium mb-3 line-clamp-3 leading-relaxed text-right">"أفضل شركة نقل أثاث تعاملت معها! وصلوا في الميعاد بالضبط."</p>
-                    <h4 class="font-bold text-gray-900 text-sm text-right">- أحمد، الجيزة</h4>
-                </div>
-                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-1 text-star text-sm">
-                            <span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span>
-                        </div>
-                        <span class="material-icons-outlined text-primary/20 text-3xl">format_quote</span>
-                    </div>
-                    <p class="text-gray-700 text-sm font-medium mb-3 line-clamp-3 leading-relaxed text-right">"فريق محترف ورقي في التعامل. التغليف من الوفاء كان ممتاز."</p>
-                    <h4 class="font-bold text-gray-900 text-sm text-right">- عمر، القاهرة</h4>
-                </div>
-                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100 hover:shadow-md transition-shadow duration-300">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-1 text-star text-sm">
-                            <span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span><span class="material-icons text-sm">star</span>
-                        </div>
-                        <span class="material-icons-outlined text-primary/20 text-3xl">format_quote</span>
-                    </div>
-                    <p class="text-gray-700 text-sm font-medium mb-3 line-clamp-3 leading-relaxed text-right">"ونش الوفاء أنقذني فعلاً! والونش الحديث خلى النقل سهل."</p>
-                    <h4 class="font-bold text-gray-900 text-sm text-right">- خديجة، التجمع</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-white dark:bg-secondary-dark">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-[#2d3748] dark:text-white mb-4">خدمات نقل العفش والاثاث</h2>
-                <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">تغطية شاملة لجميع مناطق القاهرة والجيزة والمدن الجديدة بأحدث أسطول نقل.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Service Cards -->
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202035226-02-11%20at%201.03.49%20AM.webp?updatedAt=1770820050706" alt="نقل اثاث بالتجمع" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">local_shipping</span>
-                        <h3>شركات نقل اثاث بالتجمع</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نمتلك أسطولاً ضخماً بالتجمع الخامس لخدمة الكمبوندات والفيلات مع تغليف كامل للأثاث.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.0223.52%20AM.webp?updatedAt=1770820050799" alt="نقل اثاث بمدينتي" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">location_city</span>
-                        <h3>شركات نقل اثاث بمدينتي</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمة نقل عفش راقية بمدينتي مع تصاريح دخول السيارات والتعامل مع جميع المراحل.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <!-- ... other service cards shortened for space but kept in final code ... -->
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2020262-02-11%20at%201.03.36%20AM.webp?updatedAt=1770820050659" alt="نقل اثاث بالرحاب" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">home</span>
-                        <h3>شركات نقل اثاث بالرحاب</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">فريق متخصص لفك وتركيب العفش بالرحاب مع الحفاظ على الفرش والأجهزة الكهربائية.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%20202526-02-11%20at%201.03.51%20AM.webp?updatedAt=1770820051169" alt="نقل اثاث بالشروق" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">wb_sunny</span>
-                        <h3>شركات نقل اثاث بالشروق</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">أوناش رفع هيدروليكية تصل لأعلى الأدوار بمدينة الشروق لضمان سلامة المنقولات.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <!-- (Continuing all 16 areas) -->
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-202-11%20at%201.03.51%20AM.webp?updatedAt=1770820051783" alt="نقل اثاث بمدينة نصر" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">apartment</span>
-                        <h3>شركات نقل اثاث بمدينه نصر</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">أرخص شركات نقل الأثاث بمدينة نصر مع توفير كراتين وخدمة تغليف متكاملة.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.5052%20AM.webp?updatedAt=1770820052485" alt="نقل اثاث بمصر الجديدة" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">flight_takeoff</span>
-                        <h3>شركات نقل اثاث بمصر الجديدة</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خبرة طويلة في نقل العفش بمصر الجديدة، عمالة فنية مدربة على أعلى مستوى.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.52%20A5M.webp?updatedAt=1770820051779" alt="نقل اثاث بالمعادي" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">park</span>
-                        <h3>شركات نقل اثاث بالمعادي</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمات متميزة لسكان المعادي، سيارات مغلقة وأوناش لرفع الأثاث الثقيل.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-211%20at%201.03.51%20AM.webp?updatedAt=1770820051228" alt="نقل اثاث بالشيخ زايد" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">villa</span>
-                        <h3>شركات نقل اثاث بالشيخ زايد</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نقل وفك وتركيب في الشيخ زايد وأكتوبر بأيدي نجارين محترفين.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.325%20AM.webp?updatedAt=1770820049825" alt="نقل اثاث بالمقطم" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">terrain</span>
-                        <h3>شركات نقل اثاث بالمقطم</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">سيارات قوية مجهزة لصعود المقطم ونقل العفش بأمان وسرعة.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp2%20Image%202026-02-11%20at%201.03.31%20AM.webp?updatedAt=1770820050346" alt="نقل اثاث النزهة" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">airplanemode_active</span>
-                        <h3>شركات نقل اثاث النزهة</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">تغطية شاملة لمنطقة النزهة الجديدة مع توفير مواد التغليف اللازمة.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-121%20at%201.03.32%20AM.webp?updatedAt=1770820050331" alt="نقل اثاث حدائق الاهرام" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">landscape</span>
-                        <h3>حدائق الاهرام</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">أوناش متخصصة لمداخل حدائق الأهرام الضيقة والارتفاعات الشاهقة.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.35%20AM.webp?updatedAt=1770820050607" alt="نقل اثاث المهندسين" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">business</span>
-                        <h3>المهندسين والدقي</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمة VIP لنقل الأثاث في المهندسين والدقي مع ضمان سلامة المنقولات.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2022026-02-11%20at%201.03.36%20AM.webp?updatedAt=1770820049992" alt="نقل اثاث جسر السويس" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">add_road</span>
-                        <h3>جسر السويس</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نقل عفش سريع وآمن في جسر السويس وعين شمس بأفضل الأسعار.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2020126-02-11%20at%201.03.32%20AM.webp?updatedAt=1770820049212" alt="نقل اثاث حلوان" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">factory</span>
-                        <h3>حلوان</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نصل إليكم في حلوان والمعصرة لنقل الأثاث المنزلي والمكتبي.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image5%202026-02-11%20at%201.03.31%20AM.webp?updatedAt=1770820049991" alt="نقل اثاث مدينة المستقبل" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">timeline</span>
-                        <h3>مدينه المستقبل</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمات نقل خاصة للمدن الجديدة ومدينة المستقبل بتجهيزات كاملة.</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-                <div class="service-card flex flex-col items-center">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.203.50%20AM.webp?updatedAt=1770820049968" alt="نقل جميع المحافظات" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
-                        <span class="material-icons-outlined">map</span>
-                        <h3>جميع محافظات مصر</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">شحن ونقل العفش من القاهرة إلى جميع محافظات الجمهورية (وجه بحري وقبلي).</p>
-                    <button class="service-btn">اطلب الخدمة</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Packaging Section -->
-    <section id="services-more" class="py-16 bg-white dark:bg-secondary-dark border-t border-gray-100 dark:border-gray-800">
+    <section id="packaging" class="py-16 bg-white dark:bg-secondary-dark border-t border-gray-100 dark:border-gray-800 reveal">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-5xl font-extrabold text-[#2d3748] dark:text-white mb-4">جميع مواد التغليف ومنتجات الحماية</h2>
@@ -598,10 +191,10 @@
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Packaging Items -->
+                <!-- Packaging Item 1 -->
                 <div class="service-card flex flex-col items-center h-full">
                     <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-111%20at%201.03.35%20AM.webp?updatedAt=1770820050849" alt="كراتين أحجام مختلفة" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-12%20at%2011.23.04%20PM.webp" alt="كراتين أحجام مختلفة" class="w-full h-full object-cover rounded-lg">
                     </div>
                     <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
                         <span class="material-icons-outlined">inventory_2</span>
@@ -610,9 +203,10 @@
                     <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">كراتين قوية ومتينة بمقاسات متنوعة لتناسب جميع أنواع الأثاث والأجهزة.</p>
                     <button class="service-btn mt-4">اطلب الآن</button>
                 </div>
+                <!-- Packaging Items 2-8 -->
                 <div class="service-card flex flex-col items-center h-full">
                     <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.37%20A2M.webp?updatedAt=1770820053389" alt="رول بابلز" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp2%20Image%202026-02-11%20at%201.03.47%20AM.webp?updatedAt=1770820051432" alt="رول بابلز" class="w-full h-full object-cover rounded-lg">
                     </div>
                     <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
                         <span class="material-icons-outlined">lens</span>
@@ -621,7 +215,6 @@
                     <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">بابلز عالي الجودة لحماية الزجاج والأشياء القابلة للكسر من الصدمات.</p>
                     <button class="service-btn mt-4">اطلب الآن</button>
                 </div>
-                <!-- (Continuing all 20 items...) -->
                 <div class="service-card flex flex-col items-center h-full">
                     <div class="service-image-container">
                         <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.49%20AM.webp?updatedAt=1770820050811" alt="استرتش تغليف" class="w-full h-full object-cover rounded-lg">
@@ -635,7 +228,7 @@
                 </div>
                 <div class="service-card flex flex-col items-center h-full">
                     <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-022-11%201at%201.03.35%20AM.webp?updatedAt=1770820051769" alt="سلوتب عريض" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-12%20at%2011.23.05%20PM.webp" alt="سلوتب عريض" class="w-full h-full object-cover rounded-lg">
                     </div>
                     <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
                         <span class="material-icons-outlined">sticky_note_2</span>
@@ -657,7 +250,7 @@
                 </div>
                 <div class="service-card flex flex-col items-center h-full">
                     <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2023026-02-11%20at%201.03.40%20AM.webp?updatedAt=1770820051696" alt="كرتون مضلع" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/411iIzdfplL._AC_UF894,1000_QL80_.webp" alt="كرتون مضلع" class="w-full h-full object-cover rounded-lg">
                     </div>
                     <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
                         <span class="material-icons-outlined">dashboard</span>
@@ -679,153 +272,228 @@
                 </div>
                 <div class="service-card flex flex-col items-center h-full">
                     <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2020226-02-11%20at%201.03.47%20AM.webp?updatedAt=1770820051547" alt="تغليف أجهزة" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-122%20at%2011.23.04%20PM.webp" alt="تغليف أجهزة" class="w-full h-full object-cover rounded-lg">
                     </div>
                     <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
                         <span class="material-icons-outlined">kitchen</span>
-                        <h3>تغليف الأجهزة</h3>
+                        <h3>شنط بسوستة كبيرة(جامبو)</h3>
                     </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">فوم وفلين خاص لتغليف الثلاجات والشاشات والأجهزة الحساسة.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.303.40%20AM.webp?updatedAt=1770820049812" alt="شنط تخزين" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">shopping_bag</span>
-                        <h3>شنط وأكياس تخزين</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">أكياس متينة لتجميع الملابس والمفروشات وسهولة نقلها.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp2%20Image%202026-02-11%20at%201.03.47%20AM.webp?updatedAt=1770820051432" alt="بابلز تغليف" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">bubble_chart</span>
-                        <h3>بابلز عالي الكثافة</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">بابلز بفقاعات هوائية قوية لامتصاص الصدمات أثناء النقل.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.5251%20AM.webp?updatedAt=1770820049544" alt="معدات تغليف" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">build</span>
-                        <h3>معدات تغليف مساعدة</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">قطاعات سلوتب ومقصات وأدوات لتسهيل عملية التغليف المنزلي.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.47%20AM.webp?updatedAt=1770820050082" alt="تغليف زجاج" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">wine_bar</span>
-                        <h3>تغليف الزجاج والتحف</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">مواد خاصة وورق مقوى لتغليف الكريستال والنجف والتحف.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.36%20AM.webp?updatedAt=1770820050489" alt="كراتين تخزين" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">archive</span>
-                        <h3>كراتين حفظ الملفات</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">كراتين مخصصة لحفظ المستندات والملفات والكتب للمكاتب والشركات.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.30%20AM.webp?updatedAt=1770820049991" alt="بيع خامات" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">store</span>
-                        <h3>بيع خامات التغليف</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">بيع مباشر للجمهور بأسعار الجملة مع خدمة التوصيل للمنازل.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.30%20AM.webp?updatedAt=1770820049991" alt="رولات تغليف" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">all_inclusive</span>
-                        <h3>رولات تغليف (بكر)</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">رولات استرتش وبابلز بأطوال كبيرة تناسب احتياجات الشركات والمصانع.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.420%20AM.webp?updatedAt=1770820049629" alt="تغليف نهائي" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">check_box</span>
-                        <h3>تغليف نهائي وتسليم</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">خدمة التغليف الشامل وتسليم العفش جاهزاً للنقل أو التخزين.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-222-11%20at%201.03.48%20AM.webp?updatedAt=1770820049114" alt="كرتون مقوى" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">call_to_action</span>
-                        <h3>كرتون مقوى (دبل)</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">كراتين دبل قوية جداً تتحمل الأوزان الثقيلة والشحن الدولي.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Imag3e%202026-02-11%20at%201.03.46%20AM.webp?updatedAt=1770820048857" alt="حماية الأركان" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">rounded_corner</span>
-                        <h3>زوايا لحماية الأركان</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">زوايا كرتونية وفوم لحماية حواف الأثاث والبراويز من الكسر.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/Whats5App%20Image%202026-02-11%20at%201.03.48%20AM.webp?updatedAt=1770820049629" alt="توصيل خامات" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">local_shipping</span>
-                        <h3>توصيل خامات التغليف</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">نصلك أينما كنت لتسليم مواد التغليف المطلوبة لباب المنزل.</p>
-                    <button class="service-btn mt-4">اطلب الآن</button>
-                </div>
-                <div class="service-card flex flex-col items-center h-full">
-                    <div class="service-image-container">
-                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/Wha5tsApp%20Image%202026-02-11%20at%201.03.48%20AM.webp?updatedAt=1770820048467" alt="تغليف تجاري" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2 mt-2">
-                        <span class="material-icons-outlined">business_center</span>
-                        <h3>تغليف تجاري للشركات</h3>
-                    </div>
-                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">حلول تغليف خاصة للشركات والمصانع والبضائع التجارية.</p>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed flex-grow">وداعاً لفوضى التخزين.. شنط جامبو لحماية مفروشاتك وتوفير مساحتك.</p>
                     <button class="service-btn mt-4">اطلب الآن</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Articles Section Restored -->
-    <section id="articles" class="py-16 bg-gray-50 dark:bg-gray-900">
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white dark:bg-secondary-dark reveal">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[#2d3748] dark:text-white mb-4">خدمات نقل العفش والاثاث</h2>
+                <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">تغطية شاملة لجميع مناطق القاهرة والجيزة والمدن الجديدة بأحدث أسطول نقل.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service Card 1 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202035226-02-11%20at%201.03.49%20AM.webp?updatedAt=1770820050706" alt="نقل اثاث بالتجمع" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">local_shipping</span>
+                        <h3>شركات نقل اثاث بالتجمع</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نمتلك أسطولاً ضخماً بالتجمع الخامس لخدمة الكمبوندات والفيلات مع تغليف كامل للأثاث.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.0223.52%20AM.webp?updatedAt=1770820050799" alt="نقل اثاث بمدينتي" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">location_city</span>
+                        <h3>شركات نقل اثاث بمدينتي</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمة نقل عفش راقية بمدينتي مع تصاريح دخول السيارات والتعامل مع جميع المراحل.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.52%20A3M.webp?updatedAt=1770820049300" alt="نقل اثاث بالالرحاب" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">home</span>
+                        <h3>شركات نقل اثاث بالالرحاب</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">فريق متخصص لفك وتركيب العفش بالرحاب مع الحفاظ على الفرش والأجهزة الكهربائية.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%20202526-02-11%20at%201.03.51%20AM.webp?updatedAt=1770820051169" alt="نقل اثاث بالشروق" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">wb_sunny</span>
+                        <h3>شركات نقل اثاث بالشروق</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">أوناش رفع هيدروليكية تصل لأعلى الأدوار بمدينة الشروق لضمان سلامة المنقولات.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-202-11%20at%201.03.51%20AM.webp?updatedAt=1770820051783" alt="نقل اثاث بمدينة نصر" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">apartment</span>
+                        <h3>شركات نقل اثاث بمدينه نصر</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">أرخص شركات نقل الأثاث بمدينة نصر مع توفير كراتين وخدمة تغليف متكاملة.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.5052%20AM.webp?updatedAt=1770820052485" alt="نقل اثاث بمصر الجديدة" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">flight_takeoff</span>
+                        <h3>شركات نقل اثاث بمصر الجديدة</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خبرة طويلة في نقل العفش بمصر الجديدة، عمالة فنية مدربة على أعلى مستوى.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 7 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.52%20A5M.webp?updatedAt=1770820051779" alt="نقل اثاث بالمعادي" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">park</span>
+                        <h3>شركات نقل اثاث بالمعادي</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمات متميزة لسكان المعادي، سيارات مغلقة وأوناش لرفع الأثاث الثقيل.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 8 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-211%20at%201.03.51%20AM.webp?updatedAt=1770820051228" alt="نقل اثاث بالشيخ زايد" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">villa</span>
+                        <h3>شركات نقل اثاث بالشيخ زايد</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نقل وفك وتركيب في الشيخ زايد وأكتوبر بأيدي نجارين محترفين.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 9 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.325%20AM.webp?updatedAt=1770820049825" alt="نقل اثاث بالمقطم" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">terrain</span>
+                        <h3>شركات نقل اثاث بالمقطم</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">سيارات قوية مجهزة لصعود المقطم ونقل العفش بأمان وسرعة.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 10 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp2%20Image%202026-02-11%20at%201.03.31%20AM.webp?updatedAt=1770820050346" alt="نقل اثاث النزهة" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">airplanemode_active</span>
+                        <h3>شركات نقل اثاث النزهة</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">تغطية شاملة لمنطقة النزهة الجديدة مع توفير مواد التغليف اللازمة.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 11 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-121%20at%201.03.32%20AM.webp?updatedAt=1770820050331" alt="نقل اثاث حدائق الاهرام" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">landscape</span>
+                        <h3>حدائق الاهرام</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">أوناش متخصصة لمداخل حدائق الأهرام الضيقة والارتفاعات الشاهقة.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 12 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.35%20AM.webp?updatedAt=1770820050607" alt="نقل اثاث المهندسين" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">business</span>
+                        <h3>المهندسين والدقي</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمة VIP لنقل الأثاث في المهندسين والدقي مع ضمان سلامة المنقولات.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 13 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2022026-02-11%20at%201.03.36%20AM.webp?updatedAt=1770820049992" alt="نقل اثاث جسر السويس" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">add_road</span>
+                        <h3>جسر السويس</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نقل عفش سريع وآمن في جسر السويس وعين شمس بأفضل الأسعار.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 14 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2020126-02-11%20at%201.03.32%20AM.webp?updatedAt=1770820049212" alt="نقل اثاث حلوان" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">factory</span>
+                        <h3>حلوان</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">نصل إليكم في حلوان والمعصرة لنقل الأثاث المنزلي والمكتبي.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 15 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image5%202026-02-11%20at%201.03.31%20AM.webp?updatedAt=1770820049991" alt="نقل اثاث مدينة المستقبل" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">timeline</span>
+                        <h3>مدينه المستقبل</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">خدمات نقل خاصة للمدن الجديدة ومدينة المستقبل بتجهيزات كاملة.</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+                <!-- Service Card 16 -->
+                <div class="service-card flex flex-col items-center">
+                    <div class="service-image-container">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.203.50%20AM.webp?updatedAt=1770820049968" alt="نقل جميع المحافظات" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-2">
+                        <span class="material-icons-outlined">map</span>
+                        <h3>جميع محافظات مصر</h3>
+                    </div>
+                    <p class="text-white text-center text-sm opacity-90 leading-relaxed">شحن ونقل العفش من القاهرة إلى جميع محافظات الجمهورية (وجه بحري وقبلي).</p>
+                    <button class="service-btn">اطلب الخدمة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="py-16 bg-gray-50 dark:bg-gray-900 reveal">
         <div class="container mx-auto px-4 text-center">
             <div class="mb-12">
                 <div class="flex justify-center items-center gap-2 text-gray-500 mb-2">
@@ -835,27 +503,34 @@
                 <h2 class="text-4xl font-extrabold text-gray-800 dark:text-white">خدماتنا في المناطق</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Articles Content from Original -->
                 <div class="bg-white dark:bg-secondary-dark rounded-xl overflow-hidden shadow-md flex flex-col border border-gray-100 dark:border-gray-700 transition hover:shadow-xl group">
-                    <div class="relative overflow-hidden h-64"><img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2020126-02-11%20at%201.03.32%20AM.webp?updatedAt=1770820049212" alt="نقل اثاث حلوان" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%2020126-02-11%20at%201.03.32%20AM.webp?updatedAt=1770820049212" alt="نقل اثاث حلوان" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
                     <div class="p-6 flex flex-col flex-grow text-right">
                         <h3 class="text-xl font-bold text-primary mb-4">شركات نقل العفش بحلوان والمعصرة</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">نقدم خدمات نقل الأثاث المتميزة في حلوان وجميع المناطق المحيطة بها بأحدث السيارات المجهزة وفريق عمل محترف...</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">نقدم خدمات نقل الأثاث المتميزة في حلوان وجميع المناطق المحيطة بها بأحدث السيارات المجهزة وفريق عمل محترف يضمن لك السلامة والسرعة في التنفيذ...</p>
                         <a href="#" class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">اقرأ المزيد <span class="material-icons-outlined text-xs">keyboard_double_arrow_left</span></a>
                     </div>
                 </div>
                 <div class="bg-white dark:bg-secondary-dark rounded-xl overflow-hidden shadow-md flex flex-col border border-gray-100 dark:border-gray-700 transition hover:shadow-xl group">
-                    <div class="relative overflow-hidden h-64"><img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.03.31%20AM.webp?updatedAt=1770820049632" alt="نقل اثاث النزهة" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://ik.imagekit.io/mkek1asn5/images/%D8%AA%D8%BA%D9%84%D9%8A%D9%81-%D8%A2%D9%85%D9%86-%D9%88%D9%85%D9%88%D8%A7%D8%AF-%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9.webp?updatedAt=1763594183750" alt="نقل اثاث النزهة" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
                     <div class="p-6 flex flex-col flex-grow text-right">
                         <h3 class="text-xl font-bold text-primary mb-4">نقل عفش النزهة الجديدة ومصر الجديدة</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">خدمة سريعة وآمنة لنقل العفش في النزهة ومصر الجديدة، نوفر كراتين ومواد تغليف لحماية مقتنياتك الثمينة...</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">خدمة سريعة وآمنة لنقل العفش في النزهة ومصر الجديدة، نوفر كراتين ومواد تغليف لحماية مقتنياتك الثمينة مع عمالة مدربة على أعلى المستويات الفنية...</p>
                         <a href="#" class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">اقرأ المزيد <span class="material-icons-outlined text-xs">keyboard_double_arrow_left</span></a>
                     </div>
                 </div>
                 <div class="bg-white dark:bg-secondary-dark rounded-xl overflow-hidden shadow-md flex flex-col border border-gray-100 dark:border-gray-700 transition hover:shadow-xl group">
-                    <div class="relative overflow-hidden h-64"><img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.203.50%20AM.webp?updatedAt=1770820049968" alt="نقل جميع المحافظات" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/WhatsApp%20Image%202026-02-11%20at%201.203.50%20AM.webp?updatedAt=1770820049968" alt="نقل جميع المحافظات" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
                     <div class="p-6 flex flex-col flex-grow text-right">
                         <h3 class="text-xl font-bold text-primary mb-4">شحن الاثاث لجميع محافظات مصر</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">نصل إليك أينما كنت، خدمة شحن ونقل العفش من القاهرة إلى الإسكندرية، الصعيد، والدلتا بأمان تام...</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 flex-grow">نصل إليك أينما كنت، خدمة شحن ونقل العفش من القاهرة إلى الإسكندرية، الصعيد، والدلتا بأمان تام وأسعار تنافسية تناسب جميع العملاء مع سيارات مغلقة...</p>
                         <a href="#" class="text-primary font-bold text-sm flex items-center gap-1 hover:underline">اقرأ المزيد <span class="material-icons-outlined text-xs">keyboard_double_arrow_left</span></a>
                     </div>
                 </div>
@@ -863,39 +538,131 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white dark:bg-secondary-dark border-t border-gray-100 dark:border-gray-800">
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-16 bg-[#f8f9fb] dark:bg-secondary-dark reveal">
         <div class="container mx-auto px-4">
-            <div class="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12">
-                <div class="w-full lg:w-1/3 text-right">
-                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">تواصل معنا الآن</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">نحن متاحون على مدار الساعة للرد على استفساراتكم وتقديم عرض سعر مجاني لنقل أثاث منزلكم أو مكتبكم.</p>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4 flex-row-reverse">
-                            <div class="bg-primary/10 p-3 rounded-lg"><span class="material-icons text-primary text-xl">call</span></div>
-                            <div class="text-right">
-                                <h4 class="font-bold text-gray-800 dark:text-white">رقم الهاتف</h4>
-                                <p class="text-primary font-bold tracking-wider">01030732666</p>
-                            </div>
-                        </div>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#2d3748] dark:text-white">
+                    <span class="text-primary">لماذا تختار</span> شركة المهدى لبيع جميع مواد التغليف ونقل الأثاث
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="material-icons-outlined text-primary text-3xl">verified</span>
+                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white text-right">خبرة واحترافية</h3>
+                    </div>
+                    <div class="why-card-line"></div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-right">نتمتع بخبرة طويلة في جميع أنواع نقل الأثاث، مع فريق عمل مدرب ومؤهل للتعامل مع كافة قطع الأثاث.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="material-icons-outlined text-orange-500 text-3xl">local_shipping</span>
+                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white text-right">سيارات مغلقة ومؤمنة</h3>
+                    </div>
+                    <div class="why-card-line"></div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-right">نستخدم أسطولاً من السيارات المجهزة بالكامل لنقل الأثاث بشكل آمن، لحماية الأثاث من الخدوش والأمطار.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md border-b-4 border-primary transition-transform hover:-translate-y-2">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="material-icons-outlined text-amber-700 text-3xl">inventory</span>
+                        <h3 class="text-xl font-bold text-[#2d3748] dark:text-white text-right">تغليف احترافي</h3>
+                    </div>
+                    <div class="why-card-line"></div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-right">نوفر مواد تغليف متينة (بابلز، كراتين، استرتش) تحافظ على كل قطعة من الأثاث أثناء عملية النقل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Banner CTA -->
+    <section class="py-12 bg-primary reveal">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">محتاج تنقل عفشك بسهولة وبدون قلق؟</h2>
+            <p class="text-xl mb-6 font-medium">في <span class="border-b-2 border-white">شركة المهدى</span> وفرنا لك كل اللي تحتاجه في مكان واحد!</p>
+            <a href="tel:01142771987" class="inline-flex bg-white text-primary font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition items-center gap-2 mx-auto">
+                <span class="material-icons-outlined">call</span>
+                اتصل بنا الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-12 boxes-bg dark:bg-gray-800 reveal">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-8">
+            <div class="w-full lg:w-1/3 flex justify-center">
+                <div class="bg-primary w-64 h-64 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden group">
+                    <svg class="w-48 h-48 text-white z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        <rect x="7" y="10" width="10" height="7" rx="1" fill="white" stroke="none"></rect>
+                    </svg>
+                    <div class="absolute bottom-4 text-center w-full">
+                        <span class="text-white font-bold text-xl">المهدى لنقل الاثاث</span>
                     </div>
                 </div>
-                <div class="w-full lg:w-2/3 bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-right">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">الاسم بالكامل</label>
-                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700" placeholder="مثال: أحمد محمد" />
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">رقم الهاتف</label>
-                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700" placeholder="مثال: 010xxxxxxxx" />
-                        </div>
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">الرسالة أو نوع الخدمة</label>
-                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700" placeholder="كيف يمكننا مساعدتك؟"></textarea>
-                        </div>
-                        <button type="submit" class="md:col-span-2 bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-lg shadow-lg">إرسال الطلب</button>
-                    </form>
+            </div>
+            <div class="w-full lg:w-2/3 text-right">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">كراتين المهدى</h2>
+                <h3 class="text-lg font-medium text-gray-600 dark:text-gray-300 mb-6">شريكك المثالي للتعبئة والتغليف</h3>
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 text-sm md:text-base">
+                    إذا كنت تخطط للانتقال إلى منزل جديد، أو تحتاج إلى شحن بضائع، فإن كراتين المهدى هي الخيار الأمثل لك. نوفر كراتين بأحجام متنوعة وجودة عالية لتحمل الأوزان المختلفة.
+                </p>
+                <a href="tel:01142771987" class="block w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-md shadow-md transition-all flex items-center justify-center gap-2">
+                    <span class="material-icons-outlined transform rotate-[-90deg]">call</span>
+                    تواصل معانا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white dark:bg-background-dark border-t border-b border-gray-100 dark:border-gray-800 reveal">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-12">
+                <div class="flex flex-col items-center justify-center gap-2 text-gray-500 dark:text-gray-400 mb-2">
+                    <span class="material-icons-outlined text-4xl">format_quote</span>
+                    <span class="text-sm font-bold">آراء عملائنا</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[#2d3748] dark:text-white mb-4">ثقة عملائنا في شركة المهدى هي هدفنا</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100">
+                    <p class="text-gray-700 text-sm font-medium mb-3 text-right">"تعامل راقي جداً وسرعة في الإنجاز. العمال كانوا محترفين وحافظوا على كل قطعة أثاث."</p>
+                    <h4 class="font-bold text-gray-900 text-sm text-right">- أبو محمد، اكتوبر</h4>
+                </div>
+                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100">
+                    <p class="text-gray-700 text-sm font-medium mb-3 text-right">"أفضل شركة نقل أثاث تعاملت معها! وصلوا في الميعاد بالضبط والونش كان سريع جداً."</p>
+                    <h4 class="font-bold text-gray-900 text-sm text-right">- أحمد، الجيزة</h4>
+                </div>
+                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100">
+                    <p class="text-gray-700 text-sm font-medium mb-3 text-right">"فريق محترف ورقي في التعامل. التغليف من المهدى كان ممتاز ومحمي من أي خدش."</p>
+                    <h4 class="font-bold text-gray-900 text-sm text-right">- عمر، القاهرة</h4>
+                </div>
+                <div class="bg-gradient-to-b from-review-start to-review-end p-5 rounded-card shadow-sm border border-green-100">
+                    <p class="text-gray-700 text-sm font-medium mb-3 text-right">"ونش المهدى أنقذني فعلاً! والونش الحديث خلى النقل من الدور العاشر سهل وبسيط."</p>
+                    <h4 class="font-bold text-gray-900 text-sm text-right">- خديجة، التجمع</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white dark:bg-secondary-dark border-t border-gray-100 dark:border-gray-800 reveal">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto flex flex-col items-center">
+                <div class="w-full text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">تواصل معنا الآن</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed max-w-2xl mx-auto">نحن متاحون على مدار الساعة للرد على استفساراتكم وتقديم عرض سعر مجاني لنقل أثاث منزلكم أو مكتبكم بأفضل الأسعار.</p>
+                    <div class="flex justify-center">
+                        <a href="tel:01142771987" class="flex items-start gap-4 flex-row-reverse group transition-transform hover:scale-105">
+                            <div class="bg-primary/10 p-3 rounded-lg group-hover:bg-primary transition"><span class="material-icons text-primary group-hover:text-white text-xl">call</span></div>
+                            <div class="text-right">
+                                <h4 class="font-bold text-gray-800 dark:text-white">رقم الهاتف</h4>
+                                <p class="text-primary font-bold tracking-wider text-xl">01142771987</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -906,44 +673,52 @@
         <div class="container mx-auto px-4 text-right">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="flex flex-col items-start">
-                    <img src="https://ik.imagekit.io/mkek1asn5/Wafaa/logo2.webp" alt="Logo" class="h-16 mb-4">
+                    <img src="https://ik.imagekit.io/mkek1asn5/General/logo.webp" alt="Logo" class="h-16 mb-4">
                     <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                        سيارات مغلقة، أوناش هيدروليكية، وأفضل خامات التغليف في مصر. جودة الوفاء التي تثق بها.
+                        سيارات مغلقة، أوناش هيدروليكية، وأفضل خامات التغليف في مصر. جودة المهدى التي تثق بها لضمان سلامة مقتنياتك.
                     </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-[#2d3748] dark:text-white border-b-2 border-primary inline-block pb-1">روابط سريعة</h3>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="#about" class="hover:text-primary transition nav-link">من نحن</a></li>
+                        <li><a href="#services" class="hover:text-primary transition nav-link">خدماتنا</a></li>
+                        <li><a href="#articles" class="hover:text-primary transition nav-link">المقالات</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition nav-link">اتصل بنا</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h3 class="font-bold text-lg mb-4 text-[#2d3748] dark:text-white border-b-2 border-primary inline-block pb-1">تواصل معنا</h3>
                     <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 justify-end">
+                            <span>01142771987</span>
                             <span class="material-icons text-primary text-lg">call</span>
-                            <span>01030732666</span>
+                        </li>
+                        <li class="flex items-center gap-2 justify-end">
+                            <span>خدمة 24 ساعة</span>
+                            <span class="material-icons text-primary text-lg">schedule</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="border-t dark:border-gray-800 mt-12 pt-6 text-center text-xs text-gray-500 dark:text-gray-400">
-                <p>© جميع الحقوق محفوظة لشركة الوفاء لبيع مواد التغليف ونقل العفش 2025</p>
+                <p>© جميع الحقوق محفوظة لشركة المهدى لبيع مواد التغليف ونقل العفش 2025</p>
             </div>
         </div>
     </footer>
 
-    <!-- Call Floating Button (Right Side - Green Circle) -->
-    <div class="fixed bottom-6 right-6 z-[999]">
-        <a href="tel:01030732666" class="bg-[#008000] hover:bg-[#006400] text-white w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center border-2 border-white animate-pulse-soft" title="اتصل بنا">
+    <!-- Floating Buttons -->
+    <div class="fixed bottom-6 right-6 z-[90]">
+        <a href="tel:01142771987" class="bg-[#008000] hover:bg-[#006400] text-white w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center border-2 border-white animate-pulse-soft">
             <span class="material-icons text-2xl md:text-3xl">call</span>
         </a>
     </div>
-
-    <!-- WhatsApp Floating Button (Left Side - Bubble Left, Icon Right) -->
-    <div class="fixed bottom-6 left-6 z-[999] flex items-center gap-3">
-        <!-- فقاعة الترحيب (تظهر الآن على يسار الأيقونة) -->
-        <div class="bg-white text-gray-800 text-xs md:text-sm font-bold py-2 px-4 rounded-xl shadow-lg border border-gray-100 whitespace-nowrap order-first">
-            اهلا بك فى شركة الوفاء
+    <div class="fixed bottom-6 left-6 z-[90] flex items-center gap-3">
+        <div class="bg-white text-gray-800 text-xs md:text-sm font-bold py-2 px-4 rounded-xl shadow-lg border border-gray-100 whitespace-nowrap order-first hidden sm:block">
+            اهلا بك فى شركة المهدى
         </div>
-        
-        <!-- زر الواتساب (في أقصى اليمين بالنسبة للحاوية) -->
-        <a href="https://wa.me/201030732666" class="bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center border-2 border-white order-last" title="تواصل عبر واتساب">
-            <svg class="w-7 h-7 md:w-9 md:h-9" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://wa.me/201142771987" class="bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center border-2 border-white order-last">
+            <svg class="w-7 h-7 md:w-9 md:h-9" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
             </svg>
         </a>
